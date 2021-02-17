@@ -1,4 +1,3 @@
-<script>
      var floatYears, floatMonths, floatFortnights, floatWeeks, floatDays;
      floatYears = prompt("Enter current age");
      floatMonths = floatYears*12;
@@ -9,4 +8,3 @@
      alert("Age in fortnights = " + floatFortnights);
      alert("Age in weeks = " + floatWeeks);
      alert("Age in days = " + floatDays);
-   </script>
