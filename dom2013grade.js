@@ -12,37 +12,47 @@ var calculate_click = function ()
     floatFinPts = parseFloat($("fin_pts").value);
     intGradeOption = parseInt($("grade_option").value);
     floatTotalPts = parseFloat(floatHwPts + floatMidPts + floatFinPts);
-    $("final_grade").value = stringFinalGrade  
 
-};
 
-if (("grade_option").value===1)
+
+if (intGradeOption===1)
 {
     if(floatTotalPts >= 80) {
-      alert("Pass");
+      stringFinalGrade = ("You Passed");
     }
-      alert("Fail");
+        else
+        {
+        stringFinalGrade = ("You Failed");
+        }
 }
 
-if (("grade_option").value===2)
+else
 {
-if (floatTotalPts >=90) {
+    if (floatTotalPts >=90)
+    {
       stringFinalGrade = "A";
-}
-    else if (floatTotalPts <90 && floatTotalPts >=80) {
-      stringFinalGrade = "B";
     }
-      else if (floatTotalPts <80 && floatTotalPts>=70) {
+    else if (floatTotalPts <90 && floatTotalPts >=80)
+        {
+      stringFinalGrade = "B";
+        }
+      else if (floatTotalPts <80 && floatTotalPts>=70)
+            {
          stringFinalGrade = "C";
-      }
-         else if (floatTotalPts <70 && floatTotalPts>=60) {
-            stringFinalGrade = "D";
             }
+         else if (floatTotalPts <70 && floatTotalPts>=60)
+                {
+            stringFinalGrade = "D";
+                }
             else
-               {stringFinalGrade = "F";
-               
-               }
+                {
+                stringFinalGrade = "F";
+                }
 }
+
+$("final_grade").value = stringFinalGrade;
+
+};
 
 window.onload = function () 
 {
