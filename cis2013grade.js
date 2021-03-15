@@ -26,18 +26,18 @@ if (intGradeOption===1)
       alert("Fail");
 }
 
-if (floatTotalPts) >=90 {
+if (floatTotalPts >=90) {
       stringFinalGrade = "A";
 }
     else if (floatTotalPts <90 && floatTotalPts >=80) {
       stringFinalGrade = "B";
-      
-      else if (floatTotalPts >=70 && <80) {
+    }
+      else if (floatTotalPts <80 && floatTotalPts >=70) {
          stringFinalGrade = "C";
-         
-         else if (floatTotalPts >=60 && <70)
+      }
+         else if (floatTotalPts <70 && floatTotalPts>=60) {
             stringFinalGrade = "D";
-            
+         }
             else
                {stringFinalGrade = "F";
                }
