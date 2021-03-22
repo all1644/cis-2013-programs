@@ -53,7 +53,9 @@ var fixPrinter = function() {
     //case
  }   
     
+$("output").value = stringOutput;
+};
+    
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
-};
-};
+}

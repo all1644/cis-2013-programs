@@ -35,7 +35,7 @@ var fixPrinter = function() {
     }
         else if (boolPrinting === true && boolRedLight === true && boolRecognised === false)
         {
-      stringOutput = stringMessage4 + "\n" stringMessage5;
+      stringOutput = stringMessage4 + "\n" + stringMessage5;
         }
              else if (boolPrinting === true && boolRedLight === false && boolRecognised === true)
             {
@@ -61,11 +61,11 @@ var fixPrinter = function() {
                                 {
                             stringOutput = stringMessage6;
                                 }
-}
 
+$("output").value = stringOutput;
 
-
+};
 
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
-};
+}
