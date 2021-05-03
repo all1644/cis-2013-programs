@@ -20,15 +20,15 @@ var generate = function ()
 
 	// write whatever kind of loop you want, given the above info, to generate the appropriate
 	// number of fibonacci numbers and then post it to the html DOM 
-if (isNaN(intCount) || intCount<1 || intCount>100)
+if (isNaN(intCount) || intCount<1 || intCount>100) //makes users enter a number between 1 and 100
     {
     $("total_fib").value = "";
     $("output").value = "Enter a valid input";
-    alert("Please enter a number between 1 and 100");
+    alert("Please enter a number between 1 and 100"); //error message
 }
     else
     {
-        while (intCount > 2)
+        while (intCount > 2) //counting down from intcount
         {
             k=i+j;
             i=j;
